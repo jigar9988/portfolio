@@ -3,8 +3,7 @@ import type { NextConfig } from "next";
 
 
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
-const basePath = isGithubActions ? "/portfolio" : "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",

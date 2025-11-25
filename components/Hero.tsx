@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8">
             {/* Background Gradient */}
-            <div className="absolute inset-0 bg-linear-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-10" />
 
             {/* Decorative Circles */}
             <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
@@ -62,10 +62,10 @@ export default function Hero() {
                         <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full opacity-20 blur-2xl animate-pulse" />
                         <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-slate-700/50 shadow-2xl">
                             <Image
-                                src="/images/pic2.png"
+                                src="/images/pic2.png?v=1"
                                 alt="Jigar Trivedi"
                                 fill
-                                className="object-cover"
+                                className="object-fill"
                                 priority
                             />
                         </div>

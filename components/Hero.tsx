@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8">
             {/* Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-10" />
+            <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 -z-10" />
 
             {/* Decorative Circles */}
             <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
@@ -42,7 +42,7 @@ export default function Hero() {
                             View Work
                         </a>
                         <a
-                            href="/resume.pdf"
+                            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`}
                             target="_blank"
                             className="px-8 py-3 border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white rounded-full font-medium transition-colors duration-300 cursor-pointer"
                         >
@@ -59,7 +59,7 @@ export default function Hero() {
                     className="relative pt-12 mx-auto lg:mx-0"
                 >
                     <div className="relative  w-72 h-72 sm:w-96 sm:h-96">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full opacity-20 blur-2xl animate-pulse" />
+                        <div className="absolute inset-0 bg-linear-to-tr from-blue-500 to-purple-500 rounded-full opacity-20 blur-2xl animate-pulse" />
                         <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-slate-700/50 shadow-2xl">
                             <Image
                                 src="/images/pic2.png?v=1"

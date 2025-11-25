@@ -62,7 +62,7 @@ export default function Hero() {
                         <div className="absolute inset-0 bg-linear-to-tr from-blue-500 to-purple-500 rounded-full opacity-20 blur-2xl animate-pulse" />
                         <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-slate-700/50 shadow-2xl">
                             <Image
-                                src="/images/pic2.png?v=1"
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/pic2.png?v=1`}
                                 alt="Jigar Trivedi"
                                 fill
                                 className="object-fill"

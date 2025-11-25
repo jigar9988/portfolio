@@ -10,7 +10,7 @@ const projects = [
         title: "Analytics Implementation",
         description: "Setup and configuration of GA4 and GA3 for diverse clients in BFSI, Publishers, and E-commerce. Implemented AB tests using Adobe Target, Google Optimize, and VWO.",
         tags: ["GA4", "GTM", "Adobe Target", "VWO"],
-        image: "/images/project1.png", // Placeholder
+        image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/project1.png`, // Placeholder
         github: "#",
         demo: "#",
     },
@@ -19,7 +19,7 @@ const projects = [
         title: "Server-Side GTM & FB CAPI",
         description: "Implemented server-side GTM configurations and integrated Facebook Conversion API for multiple clients to enhance tracking accuracy and data control.",
         tags: ["Server-side GTM", "FB CAPI", "Data Tracking"],
-        image: "/images/project2.png", // Placeholder
+        image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/project2.png`, // Placeholder
         github: "#",
         demo: "#",
     },
@@ -28,7 +28,7 @@ const projects = [
         title: "Real-Time Data Integration",
         description: "Developed custom GTM tag templates to stream GA hits to BigQuery in real-time, reducing reporting latency by 40%.",
         tags: ["GTM", "BigQuery", "JavaScript", "Data Engineering"],
-        image: "/images/project3.png", // Placeholder
+        image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/project3.png`, // Placeholder
         github: "#",
         demo: "#",
     },
@@ -37,7 +37,7 @@ const projects = [
         title: "Online Exam Portal",
         description: "Built a full-stack online exam portal to streamline company exams and deliver candidate insights.",
         tags: ["Node.js", "React.js", "MongoDB"],
-        image: "/images/project4.png", // Placeholder
+        image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/project4.png`, // Placeholder
         github: "#",
         demo: "#",
     },
